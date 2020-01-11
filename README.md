@@ -1,5 +1,5 @@
 # ravencoinOS
-Patch/Upgrades for RavencoinOS and ravencoin Restricted Assets
+Patch/Upgrades for RavencoinOS for Restricted Assets and more
 
 # Instructions for RPI4 ravend 3.1.0develop branch -> 3.3.0 prod upgrade
 Make sure you only use this on the rpi november 2019 release for rpi4's. 
