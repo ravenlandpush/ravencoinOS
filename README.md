@@ -1,8 +1,9 @@
 # ravencoinOS
 Patch/Upgrades for RavencoinOS and ravencoin Restricted Assets
 
-# Instructions
-Make sure you only use this on the rpi november 2019 release for rpi4's.
+# Instructions for RPI4 ravend 3.1.0develop branch -> 3.3.0 prod upgrade
+Make sure you only use this on the rpi november 2019 release for rpi4's. 
+i.e. ravencoinOS made using this image https://bootstrap.ravenland.org/dist/ravencoinOS/ravencoinOS-release5-nov-2019-rpi4-latest.img
 
 Ensure you run this as the pi user only.
 
