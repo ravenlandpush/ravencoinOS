@@ -31,7 +31,7 @@ tar zxvf restricted-assets-patch-rpi4-raven3.3.0-qt-latest.tar.gz
 
 
 echo "deleting old binaries..."
-sudo rm /bin/ravend;rm /bin/raven-qt;rm /bin/raven-cli
+sudo rm /bin/ravend;sudo rm /bin/raven-qt;sudo rm /bin/raven-cli
 
 echo "replacing new binaries..."
 sudo cp -rp ~pi/raven-3.3.0-qt/bin/* /bin;
@@ -53,7 +53,7 @@ sudo mv /home/pi/raven-3.3.0-qt/bin/raven-qt /home/pi/raven-3.3.0-qt/
 echo "add correct permissions and put raven-qt in correct path..."
 sudo chmod +x /home/pi/raven-3.3.0-qt/*
 sudo chmod +x /home/pi/raven-3.3.0-qt/bin/*
-sudo chmod +x /bin/ravend; chmod +x /bin/raven-cli; chmod +x /bin/raven-qt;
+sudo chmod +x /bin/ravend; sudo chmod +x /bin/raven-cli; sudo chmod +x /bin/raven-qt;
 
 
 echo "Attempting to restart ravend and ipfs services..."
