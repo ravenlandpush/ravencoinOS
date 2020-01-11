@@ -42,19 +42,19 @@ sudo sed -i "s,raven-3.2.0,raven-3.3.0,g" /lib/systemd/system/ravend.service
 
 echo "refreshing systemctl unit files"; sleep 2;
 sudo systemctl daemon-reload;
-
-
 sudo sed -i 's/raven-3.2.0/raven-3.3.0/g' /home/pi/launchwalletnow.sh
 
 
-sudo chown -R pi:pi /home/pi;
-sudo mv /home/pi/raven-3.3.0-qt/bin/raven-qt /home/pi/raven-3.3.0-qt/
+
+
 
 echo "add correct permissions and put raven-qt in correct path..."
+sudo mv /home/pi/raven-3.3.0-qt/bin/* /home/pi/raven-3.3.0-qt/
 sudo chmod +x /home/pi/raven-3.3.0-qt/*
-sudo chmod +x /home/pi/raven-3.3.0-qt/bin/*
-sudo chmod +x /bin/ravend; sudo chmod +x /bin/raven-cli; sudo chmod +x /bin/raven-qt;
 
+# Resetting Permissions for pi user and binary execution bit
+sudo chmod +x /bin/ravend; sudo chmod +x /bin/raven-cli; sudo chmod +x /bin/raven-qt;
+sudo chown -R pi:pi /home/pi;
 
 echo "Attempting to restart ravend and ipfs services..."
 sudo systemctl start ravend;
